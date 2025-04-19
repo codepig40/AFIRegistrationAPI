@@ -1,0 +1,2 @@
+dotnet ef dbcontext scaffold "Data Source=Database\database.db" Microsoft.EntityFrameworkCore.Sqlite -o Models -f
+

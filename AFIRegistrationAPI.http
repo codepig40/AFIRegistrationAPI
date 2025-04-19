@@ -1,0 +1,6 @@
+@AFIRegistrationAPI_HostAddress = http://localhost:5089
+
+GET {{AFIRegistrationAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
