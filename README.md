@@ -27,8 +27,7 @@ AFIRegistrationAPI/
 ├── Properties/              
 ├── appsettings.json         
 ├── Program.cs               
-├── AFIRegistrationAPI.csproj
-└── AFIRegistrationAPI.sln   
+└── AFIRegistrationAPI.csproj   
 ```
 
 ## Getting Started
