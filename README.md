@@ -42,7 +42,7 @@ AFIRegistrationAPI/
 
    ```bash
    git clone https://github.com/codepig40/AFIRegistrationAPI.git
-   cd AFIRegistrationAPI
+   cd AFIRegistrationAPI/AFIRegistrationAPI
    ```
 
 2. **No database setup required**:
