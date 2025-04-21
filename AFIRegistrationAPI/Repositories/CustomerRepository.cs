@@ -20,13 +20,6 @@ namespace AFIRegistrationAPI.Repositories
         
         }
 
-
-        public Task<string> TESTAsync(int id)
-        {
-            return Task.FromResult("Test Customer");
-
-        }
-
         public async Task<Customer> AddCustomerAsync(Customer customer)
         {
             try
@@ -36,7 +29,7 @@ namespace AFIRegistrationAPI.Repositories
             }
             catch (Exception ex)
             {
-                //$"Failed to Create Customer";
+                throw;
             }
 
             return customer;

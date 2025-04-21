@@ -4,8 +4,6 @@ namespace AFIRegistrationAPI.Repositories
 {
     public interface IPolicyRepository
     {
-
-        Task<string> TESTAsync(int id);
         Task<Policy> AddPolicyAsync(Policy policy);
 
         Task<List<Policy>> GetPoliciesAsync();

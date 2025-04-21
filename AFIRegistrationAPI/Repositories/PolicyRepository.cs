@@ -14,13 +14,6 @@ namespace AFIRegistrationAPI.Repositories
 
         }
 
-
-        public Task<string> TESTAsync(int id)
-        {
-            return Task.FromResult("Test Policy");
-
-        }
-
         public async Task<Policy> AddPolicyAsync(Policy policy)
         {
             try

@@ -36,6 +36,7 @@ namespace AFIRegistrationAPI.Controllers
 
 
         [HttpPost]
+        [Route("Register")]
         public async Task<IActionResult> Register(RegisterCustomer registerCustomer)
         {
             var policy = await _policyRepository.GetPolicyByReferenceAsync(registerCustomer.PolicyReference);
@@ -51,10 +52,10 @@ namespace AFIRegistrationAPI.Controllers
 
 
               // populate newCustomer
-          Customer newCustomer = _registerCustomerMapper.ToCustomer(registerCustomer);
+              Customer newCustomer = _registerCustomerMapper.ToCustomer(registerCustomer);
 
             var customer = await _customerRepository.AddCustomerAsync(newCustomer);
-            policy.CustomerId = newCustomer.CustomerId;
+            policy.CustomerId = customer.CustomerId;
             policy = await _policyRepository.UpdatePolicyAsync(policy);
 
 
